@@ -1,9 +1,9 @@
 import PIL.Image
 import PIL.ImageDraw
-
+import face_recognition
 
 # Load the jpg file into a numpy array
-
+image = face_recognition.load_image_file("people.jpg")
 
 # Find all facial features in all the faces in the image
 
