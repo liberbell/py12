@@ -27,6 +27,6 @@ for face_landmarks in face_landmarks_list:
         print("The {} in this face has the following points: {}".format(name, list_of_points))
 
         # Let's trace out each facial feature in the image with a line!
-        draw.line(list_of_points, fill="red", width=2)
+        draw.line(list_of_points, fill="red", width=3)
 
 pil_image.show()
