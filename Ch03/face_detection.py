@@ -7,7 +7,7 @@ import face_recognition
 image = face_recognition.load_image_file("people.jpg")
 
 # Find all the faces in the image
-
+face_locations = face_recognition.face_locations(image)
 
 number_of_faces = len(face_locations)
 print("I found {} face(s) in this photograph.".format(number_of_faces))
