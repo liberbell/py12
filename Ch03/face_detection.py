@@ -18,6 +18,7 @@ pil_image = PIL.Image.fromarray(image)
 for face_location in face_locations:
 
     # Print the location of each face in this image. Each face is a list of co-ordinates in (top, right, bottom, left) order.
+    top, right, bottom, left = face_location
 
     print("A face is located at pixel location Top: {}, Left: {}, Bottom: {}, Right: {}".format(top, left, bottom, right))
 
