@@ -3,10 +3,10 @@ from pathlib import Path
 from PIL import Image
 
 # Load the image of the person we want to find similar people for
-known_image =
+known_image = face_recognition.load_image_file("test_face.jpg")
 
 # Encode the known image
-known_image_encoding =
+known_image_encoding = face_recognition.face_encodings(known_image)[0]
 
 # Variables to keep track of the most similar face match we've found
 best_face_distance = 1.0
