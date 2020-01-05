@@ -23,8 +23,8 @@ for face_landmarks in face_landmarks_list:
 
 
     # Draw over the lips
-    d.polygon(face_landmarks["top_lip"], fill(128, 0, 128, 100))
-    d.polygon(face_landmarks["bottom_lip"], fill(128, 0, 128, 100))
+    d.polygon(face_landmarks["top_lip"], fill=(128, 0, 128, 100))
+    d.polygon(face_landmarks["bottom_lip"], fill=(128, 0, 128, 100))
 
 
 # Show the final image
