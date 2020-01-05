@@ -1,9 +1,9 @@
 import face_recognition
 
 # Load the known images
-
-
-
+image_of_person_1 = face_recognition.load_image_file("person_1.jpg")
+image_of_person_2 = face_recognition.load_image_file("person_2.jpg")
+image_of_person_3 = face_recognition.load_image_file("person_3.jpg")
 
 # Get the face encoding of each person. This can fail if no one is found in the photo.
 
