@@ -4,7 +4,7 @@ import face_recognition
 image = face_recognition.load_image_file("person.jpg")
 
 # Generate the face encodings
-face_recognition.face_encodings(image)
+face_encodings = face_recognition.face_encodings(image)
 
 if len(face_encodings) == 0:
     # No faces found in the image.
