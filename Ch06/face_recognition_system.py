@@ -6,9 +6,9 @@ image_of_person_2 = face_recognition.load_image_file("person_2.jpg")
 image_of_person_3 = face_recognition.load_image_file("person_3.jpg")
 
 # Get the face encoding of each person. This can fail if no one is found in the photo.
-
-
-
+person_1_face_encording = face_recognition.face_encodings(image_of_person_1)[0]
+person_2_face_encording = face_recognition.face_encodings(image_of_person_2)[0]
+person_3_face_encording = face_recognition.face_encodings(image_of_person_3)[0]
 
 # Create a list of all known face encodings
 known_face_encodings = [
