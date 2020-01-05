@@ -22,7 +22,7 @@ unknown_image = face_recognition.load_image_file("unknown_7.jpg")
 
 # Get face encodings for any people in the picture
 face_locations = face_recognition.face_locations(unknown_image)
-unknown_face_encodings = face_recognition.face_encodings(unknown_image, know_face_locations=face_locations)
+unknown_face_encodings = face_recognition.face_encodings(unknown_image, known_face_locations=face_locations)
 
 # There might be more than one person in the photo, so we need to loop over each face we found
 for unknown_face_encoding in unknown_face_encodings:
