@@ -18,7 +18,7 @@ known_face_encodings = [
 ]
 
 # Load the image we want to check
-
+unknown_image = face_recognition.load_image_file("unknown_8.jpg")
 
 # Get face encodings for any people in the picture
 
