@@ -12,9 +12,9 @@ person_3_face_encording = face_recognition.face_encodings(image_of_person_3)[0]
 
 # Create a list of all known face encodings
 known_face_encodings = [
-
-
-
+    person_1_face_encording,
+    person_2_face_encording,
+    person_3_face_encording
 ]
 
 # Load the image we want to check
