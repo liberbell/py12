@@ -27,7 +27,7 @@ unknown_face_encodings = face_recognition.face_encodings(unknown_image)
 for unknown_face_encoding in unknown_face_encodings:
 
     # Test if this unknown face encoding matches any of the three people we know
-    face_recognition.compare_faces(known_face_encodings, unknown_face_encoding)
+    results = face_recognition.compare_faces(known_face_encodings, unknown_face_encoding)
 
     name = "Unknown"
 
