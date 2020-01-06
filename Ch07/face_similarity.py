@@ -15,13 +15,13 @@ best_face_image = None
 # Loop over all the images we want to check for similar people
 for image_path in Path("people").glob("*.png"):
     # Load an image to check
-    unknown_image =
+    unknown_image = face_recognition.load_image_file(image_path)
 
     # Get the location of faces and face encodings for the current image
-    face_encodings =
+    face_encodings = face_recognition.face_encodings(unknown_image)
 
     # Get the face distance between the known person and all the faces in this image
-    face_distance =
+    face_distance = face_recognition.face_distance(face_encodings, known_image_encoding)
 
     # If this face is more similar to our known image than we've seen so far, save it
     if face_distance < best_face_distance:
