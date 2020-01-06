@@ -21,7 +21,7 @@ for image_path in Path("people").glob("*.png"):
     face_encodings = face_recognition.face_encodings(unknown_image)
 
     # Get the face distance between the known person and all the faces in this image
-    face_distance = face_recognition.face_distance(face_encodings, known_image_encoding)
+    face_distance = face_recognition.face_distance(face_encodings, known_image_encoding)[0]
 
     # If this face is more similar to our known image than we've seen so far, save it
     if face_distance < best_face_distance:
