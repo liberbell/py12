@@ -26,9 +26,9 @@ for image_path in Path("people").glob("*.png"):
     # If this face is more similar to our known image than we've seen so far, save it
     if face_distance < best_face_distance:
         # Save the new best face distance
-        best_face_distance =
+        best_face_distance = face_distance
         # Extract a copy of the actual face image itself so we can display it
-        best_face_image =
+        best_face_image = unknown_image
 
 # Display the face image that we found to be the best match!
 pil_image = Image.fromarray(best_face_image)
